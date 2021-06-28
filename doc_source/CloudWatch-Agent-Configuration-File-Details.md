@@ -64,7 +64,7 @@ On servers running either Linux or Windows Server, the `metrics` section include
 + `append_dimensions` – Optional\. Adds Amazon EC2 metric dimensions to all metrics collected by the agent\. This also causes the agent to not publish the hostname as a dimension\.
 
   The only supported key\-value pairs for `append_dimensions` are shown in the following list\. Any other key\-value pairs are ignored\.
-  + `"ImageID":"${aws:ImageId}"` sets the instance's AMI ID as the value of the `ImageID` dimension\.
+  + `"ImageId":"${aws:ImageId}"` sets the instance's AMI ID as the value of the `ImageId` dimension\.
   + `"InstanceId":"${aws:InstanceId}"` sets the instance's instance ID as the value of the `InstanceID` dimension\.
   + `"InstanceType":"${aws:InstanceType}"` sets the instance's instance type as the value of the `InstanceType` dimension\.
   + `"AutoScalingGroupName":"${aws:AutoScalingGroupName}"` sets the instance's Auto Scaling group name as the value of the `AutoScalingGroupName` dimension\.
